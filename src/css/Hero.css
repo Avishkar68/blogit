@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* .poetsen-one-regular {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #564f6f;
+  font-family: "Poetsen One", sans-serif;
+}
+
+.herotext-container {
+  min-height: 400px;
+  min-width: 700px;
+  color: #d1d7e0;
+  font-family: "Poetsen One", sans-serif;
+  font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.herographic-container {
+  height: 400px;
+  width: 700px;
+  border: 2px solid black;
+}
+.hero-buttons {
+  width: 360px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+.hero-buttons button {
+  padding: 16px 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 28px;
+  outline: none;
+  border: none;
+}
+
+.hero-btn1 {
+  background-color: #802bb1;
+  color: #d1d7e0;
+  transition: 0.3s ease;
+}
+
+.hero-btn1:hover {
+  background-color: #802bb1;
+  color: #d1d7e0;
+  scale: 1.1;
+  cursor: pointer;
+}
+
+.hero-btn2 {
+  border: 2px solid #802bb1;
+  border-radius: 3rem;
+  color: #802bb1;
+  font-family: roboto;
+  font-size: 4rem;
+  font-weight: 100;
+  overflow: hidden;
+  padding: 1rem 2rem;
+  position: relative;
+  text-decoration: none;
+  transition: 0.2s transform ease-in-out;
+  background: #d1d7e0;
+  will-change: transform;
+  z-index: 0;
+}
+
+.hero-btn2::after {
+  background-color: #802bb1;
+  border-radius: 3rem;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate(-100%, 0) rotate(10deg);
+  transform-origin: top left;
+  transition: 0.2s transform ease-out;
+  will-change: transform;
+  z-index: -1;
+}
+
+.hero-btn2:hover::after {
+  transform: translate(0, 0);
+}
+
+.hero-btn2:hover {
+  border: none;
+  outline: none;
+  color: #d1d7e0;
+  transform: scale(1.05);
+  will-change: transform;
+  cursor: pointer;
+  background: none;
+}
+
+@media (max-width: 600px) {
+  .herographic-container {
+    display: none;
+  }
+  .herotext-container {
+    text-align: center;
+    color: #d1d7e0;
+    font-family: "Poetsen One", sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #564f6f;
+    font-family: "Poetsen One", sans-serif;
+  }
+  
+}
